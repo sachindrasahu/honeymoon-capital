@@ -249,6 +249,11 @@ footer p{max-width:80ch;opacity:.85}
 .upi code{font-family:var(--body);font-weight:700;background:var(--paper);border:2px solid var(--ink);padding:6px 10px;border-radius:8px;user-select:all}
 .modal ol{text-align:left;padding-left:20px;margin:14px 0;font-size:14.5px;display:grid;gap:4px}
 .modal .btn{width:100%}
+.modal .btn.sm{width:auto}
+.wise{margin-top:18px;padding-top:16px;border-top:2px dashed rgba(27,20,66,.3);display:grid;gap:10px}
+.wise b{font-size:16px}
+.qrcard .wise-line{display:block;margin-top:8px;padding-top:8px;border-top:2px dashed rgba(27,20,66,.25);font-size:14px;font-weight:600;color:var(--ink)}
+.qrcard .wise-line a{color:var(--pink);font-weight:800}
 
 /* toast + confetti */
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:70;background:var(--ink);color:var(--paper);border:2.5px solid var(--sun);border-radius:14px;padding:12px 18px;font-weight:600;max-width:min(460px,calc(100% - 32px));text-align:center;box-shadow:4px 4px 0 var(--sun)}
@@ -288,7 +293,7 @@ footer p{max-width:80ch;opacity:.85}
 <main id="top">
   <div class="wrap hero">
     <div>
-      <span class="bell"><span class="dot"></span>IPO OPEN · <span id="closes" class="num">closes at take-off</span></span>
+      <span class="bell"><span class="dot"></span>IPO OPEN · <span id="closes" class="num">closes when fully subscribed</span></span>
       <h1><span id="n1">Sachindra</span> &amp; <span id="n2">Stuti</span> are going <span class="hl">public.</span></h1>
       <p class="sub">Before they go private in Italy. Buy a share of their honeymoon. Expect no returns.</p>
       <div class="quote"><b class="num">₹1,00,00,000</b><span class="chg">▲ +∞% since the wedding</span></div>
@@ -364,9 +369,9 @@ footer p{max-width:80ch;opacity:.85}
     <div class="wrap">
       <div class="sec-title"><h2>The relationship chart</h2><p>Full price history of HNYMN. Tap any candle to see what happened.</p></div>
       <div class="panel">
-        <div class="chart-wrap"><svg id="candles" viewBox="0 0 900 340" role="img" aria-label="Candlestick chart of the relationship, trending up"></svg></div>
+        <div class="chart-wrap"><svg id="candles" viewBox="0 0 900 360" role="img" aria-label="Candlestick chart of the relationship, trending up"></svg></div>
         <div class="event-box" id="event" aria-live="polite"></div>
-        <p class="hint">Analyst note: every red candle was about food.</p>
+        <p class="hint">Analyst note: the only red candle is wedding planning. The yellow one is a fight that never happened.</p>
       </div>
     </div>
   </section>
@@ -411,7 +416,7 @@ footer p{max-width:80ch;opacity:.85}
           <div class="row"><span>Pay via</span><b>UPI</b></div>
           <div class="tot"><span>Total</span><b class="num" id="o-total">₹0</b></div>
           <button class="btn buy" type="button" id="place">Place order</button>
-          <p class="small">Don’t want to pick? Place the order anyway and pay any amount you like.</p>
+          <p class="small">Don’t want to pick? Place the order anyway and pay any amount you like. Abroad? Wise works too.</p>
         </aside>
       </div>
     </div>
@@ -466,7 +471,7 @@ footer p{max-width:80ch;opacity:.85}
         <details><summary>Will I get my money back?</summary><p>No. You get a postcard, a thank-you, and possibly a fridge magnet if supplies last.</p></details>
         <details><summary>Can I send ₹101 instead?</summary><p>Yes, and we’ll love you for it. Shagun-sized investments are welcome.</p></details>
         <details><summary>My accountant says no.</summary><p>Your accountant doesn’t believe in love. Please find a new accountant.</p></details>
-        <details><summary>When does the IPO close?</summary><p>When the plane takes off. After that we’ll be busy eating pasta.</p></details>
+        <details><summary>When do you leave for Italy?</summary><p>The moment this page hits ₹4,00,000. Not a day later. The faster you pay, the sooner we stop refreshing this page and start eating pasta.</p></details>
       </div>
     </div>
   </section>
@@ -474,11 +479,12 @@ footer p{max-width:80ch;opacity:.85}
   <section class="closing">
     <div class="wrap">
       <div>
-        <h2>The bell rings at take-off.</h2>
+        <h2>The flight leaves the moment this hits 100%.</h2>
+        <p style="font-size:18px;font-weight:600;margin-top:12px;max-width:44ch">No fixed date. Bags are packed and passports are on the bed. You decide when we board.</p>
         <div class="count num" id="count"></div>
         <button class="btn sun" type="button" id="closing-buy">Pay any amount now</button>
       </div>
-      <div class="qrcard"><img src="upi-qr.jpg" alt="UPI QR code for sachindrasahu5@oksbi" width="921" height="1280" loading="lazy"><b>Scan with any UPI app</b></div>
+      <div class="qrcard"><img src="upi-qr.jpg" alt="UPI QR code for sachindrasahu5@oksbi" width="921" height="1280" loading="lazy"><b>Scan with any UPI app</b><span class="wise-line">Abroad? Wise: <a href="https://wise.com/pay/me/sachindra6" target="_blank" rel="noopener">@sachindra6</a></span></div>
     </div>
   </section>
 </main>
@@ -504,6 +510,11 @@ footer p{max-width:80ch;opacity:.85}
       <li>Send us a screenshot so we can scream.</li>
     </ol>
     <a class="btn buy" id="upi-link" href="#">Open my UPI app</a>
+    <div class="wise">
+      <b>🌍 Abroad? Pay with Wise</b>
+      <div class="upi"><code id="wise-id">@sachindra6</code><button class="btn sm" type="button" id="copy-wise">Copy</button></div>
+      <a class="btn" href="https://wise.com/pay/me/sachindra6" target="_blank" rel="noopener">Pay @sachindra6 on Wise</a>
+    </div>
   </div>
 </div>
 <div class="toast" id="toast" hidden role="status"></div>
@@ -517,9 +528,9 @@ const CONFIG = {
   raised: 0,
   investors: 0,
   byGroup: { family: 0, friends: 0, colleagues: 0 },   // ₹ from each group
-  departure: "2027-02-14T06:00:00+05:30",
   upi: "sachindrasahu5@oksbi",
-  upiName: "Sachindra Sahu"
+  upiName: "Sachindra Sahu",
+  wise: "@sachindra6"
 };
 /* ==================================== */
 
@@ -559,28 +570,29 @@ bear.addEventListener("click",()=>{ dodge(); toast(["Bears are not allowed at th
 
 /* candlestick chart */
 const events=[
-  {l:"First chat",o:10,c:22,h:26,lo:8,t:"First conversation. Stock opens. Analysts mildly interested."},
-  {l:"First date",o:22,c:38,h:42,lo:20,t:"First date. Somebody ordered too much food. Strong buying."},
-  {l:"Food fight",o:38,c:31,h:40,lo:28,t:"First fight. It was about food. It is always about food."},
-  {l:"Made up",o:31,c:50,h:54,lo:30,t:"Made up over more food. Market rallies."},
-  {l:"Families met",o:50,c:46,h:58,lo:40,t:"Families met. Extreme volatility. Everyone had opinions."},
-  {l:"Said yes",o:46,c:72,h:76,lo:45,t:"The proposal. She said yes. Circuit breaker hit on the upside."},
-  {l:"Wedding prep",o:72,c:66,h:78,lo:60,t:"Wedding planning. Guest list negotiations. Savings crash."},
-  {l:"5 & 7 Feb",o:66,c:90,h:94,lo:64,t:"The wedding, 5 and 7 February 2027. Merger complete. All-time high."},
-  {l:"Italy",o:90,c:100,h:104,lo:88,t:"Italy (projected). Depends entirely on you. No pressure. Some pressure.",proj:true}
+  {l:"First chat",d:"3 Sep 2025",o:10,c:22,h:26,lo:8,t:"First conversation. HNYMN starts trading. Analysts mildly interested, typing furiously."},
+  {l:"First date",d:"23 Jan 2026",o:22,c:38,h:42,lo:20,t:"First date. Four and a half months after the first chat. Slow build, strong fundamentals."},
+  {l:"Food fight",d:"Never",o:38,c:38,h:40,lo:36,doji:true,t:"Never happened. Not once. Zero recorded incidents. Our auditors are very proud. Please do not ask who ate the last piece."},
+  {l:"Made up",d:"Always",o:38,c:50,h:54,lo:37,t:"Always. Even when there was nothing to make up for. Especially then."},
+  {l:"Families met",d:"11 Jul 2026",o:50,c:58,h:66,lo:44,t:"Both families met. Extreme intraday volatility, everyone had opinions, and the merger was approved unanimously by dinner."},
+  {l:"Said yes",d:"4 Oct 2026",o:58,c:76,h:80,lo:57,t:"The proposal. She said yes. Upper circuit hit. Trading halted for happy crying."},
+  {l:"Wedding prep",d:"4 months",o:76,c:70,h:80,lo:62,t:"Four months of venues, menus and guest lists. Savings crashed. Love held firm. The only red candle in this chart."},
+  {l:"Wedding",d:"5 & 7 Feb 2027",o:70,c:92,h:95,lo:68,t:"The wedding, 5 and 7 February 2027. Merger complete. All-time high."},
+  {l:"Italy",d:"When you pay",o:92,c:100,h:104,lo:90,proj:true,t:"Departure date: the exact moment this page hits ₹4,00,000. Bags are packed. Passports are on the bed. Sachindra refreshes this page every 4 minutes. The flight is literally waiting for you."}
 ];
 (function(){
-  const W=900,H=340,L=20,R=20,T=24,B=50,n=events.length,step=(W-L-R)/n,max=110;
+  const W=900,H=360,L=20,R=20,T=24,B=64,n=events.length,step=(W-L-R)/n,max=110;
   const y=v=>T+(H-T-B)*(1-v/max);
   let s="";
   [25,50,75,100].forEach(g=>{s+=`<line x1="${L}" x2="${W-R}" y1="${y(g)}" y2="${y(g)}" stroke="#1B1442" stroke-opacity=".1" stroke-dasharray="4 6"/>`;});
   events.forEach((e,i)=>{
-    const cx=L+step*i+step/2, up=e.c>=e.o, col=up?"#00A86B":"#FF5A3C", top=y(Math.max(e.o,e.c)), bot=y(Math.min(e.o,e.c));
+    const cx=L+step*i+step/2, up=e.c>=e.o, col=e.doji?"#FFD84D":up?"#00A86B":"#FF5A3C", top=y(Math.max(e.o,e.c)), bot=y(Math.min(e.o,e.c));
     s+=`<g class="candle" tabindex="0" role="button" data-i="${i}" aria-label="${e.l}">
       <rect x="${cx-step/2}" y="${T}" width="${step}" height="${H-T-B}" fill="transparent"/>
       <line x1="${cx}" x2="${cx}" y1="${y(e.h)}" y2="${y(e.lo)}" stroke="#1B1442" stroke-width="2.5"/>
       <rect x="${cx-18}" y="${top}" width="36" height="${Math.max(6,bot-top)}" rx="4" fill="${col}" stroke="#1B1442" stroke-width="2.5" ${e.proj?'stroke-dasharray="5 4" fill-opacity=".55"':''}/>
-      <text x="${cx}" y="${H-B+24}" text-anchor="middle" font-size="14" font-weight="700" fill="#1B1442" font-family="Figtree,sans-serif">${e.l}</text>
+      <text x="${cx}" y="${H-B+22}" text-anchor="middle" font-size="14" font-weight="700" fill="#1B1442" font-family="Figtree,sans-serif">${e.l}</text>
+      <text x="${cx}" y="${H-B+40}" text-anchor="middle" font-size="12.5" font-weight="600" fill="${e.proj?"#FF4D8D":"#1B1442"}" fill-opacity="${e.proj?1:.65}" font-family="Figtree,sans-serif">${e.d}</text>
     </g>`;
   });
   const lx=L+step*(n-1)+step/2;
@@ -626,10 +638,14 @@ function openModal(){
 $("m-close").onclick=()=>$("modal").hidden=true;
 $("modal").addEventListener("click",e=>{if(e.target.id==="modal")$("modal").hidden=true;});
 document.addEventListener("keydown",e=>{if(e.key==="Escape")$("modal").hidden=true;});
-$("copy").onclick=()=>{
-  const sel=()=>{const r=document.createRange();r.selectNodeContents($("upi-id"));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Selected. Press copy.");};
-  try{navigator.clipboard.writeText(CONFIG.upi).then(()=>toast("UPI ID copied. Your wallet is trembling."),sel);}catch(_){sel();}
-};
+function copier(text,elId,msg){
+  return ()=>{
+    const sel=()=>{const r=document.createRange();r.selectNodeContents($(elId));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Selected. Press copy.");};
+    try{navigator.clipboard.writeText(text).then(()=>toast(msg),sel);}catch(_){sel();}
+  };
+}
+$("copy").onclick=copier(CONFIG.upi,"upi-id","UPI ID copied. Your wallet is trembling.");
+$("copy-wise").onclick=copier(CONFIG.wise,"wise-id","Wise handle copied. International love accepted.");
 
 /* status */
 (function(){
@@ -658,14 +674,12 @@ $("cert-form").addEventListener("submit",e=>{
   confetti(40); toast("Certificate issued. Screenshot it and make everyone jealous.");
 });
 
-/* countdown */
-function cd(){
-  let ms=new Date(CONFIG.departure)-new Date(); if(ms<0)ms=0;
-  const d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60,s=Math.floor(ms/1e3)%60;
-  $("count").innerHTML=[[d,"days"],[h,"hours"],[m,"mins"],[s,"secs"]].map(([v,l])=>`<div><b>${String(v).padStart(2,"0")}</b><span>${l}</span></div>`).join("");
-  $("closes").textContent=`closes in ${d} days`;
-}
-cd(); setInterval(cd,1000);
+/* boarding meter (departure = when the goal is reached) */
+(function(){
+  const g=CONFIG.goal, r=CONFIG.raised, togo=Math.max(0,g-r), pct=Math.min(100,Math.floor(r/g*100));
+  $("count").innerHTML=[[inr(r),"raised"],[inr(togo),"to go"],[pct+"%","boarding"],[CONFIG.investors,"investors"]].map(([v,l])=>`<div><b>${v}</b><span>${l}</span></div>`).join("");
+  $("closes").textContent = togo ? `${inr(togo)} to take-off` : "fully subscribed · boarding now";
+})();
 </script>
 </body>
 </html>
