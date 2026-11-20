@@ -3,438 +3,507 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sachindra &amp; Stuti Honeymoon Ltd. IPO | Honeymoon Capital</title>
-<meta name="description" content="Sachindra &amp; Stuti Honeymoon Ltd. IPO is open. Price band ₹999 to ₹49,999. Fund the Italy honeymoon. Expect no returns.">
-<meta property="og:title" content="Sachindra & Stuti Honeymoon Ltd. IPO is now open">
-<meta property="og:description" content="Price band ₹999 – ₹49,999. Listing in Italy. Returns: zero. Love: unlimited.">
+<title>HNYMN IPO · Sachindra &amp; Stuti are going public</title>
+<meta name="description" content="Sachindra &amp; Stuti are going public before going private in Italy. Buy HNYMN shares. Expect no returns.">
+<meta property="og:title" content="🔔 HNYMN IPO is open: Sachindra & Stuti are going public">
+<meta property="og:description" content="Before they go private in Italy. Shares from ₹999. Returns: zero. Love: unlimited.">
 <meta property="og:image" content="https://sachindrasahu.github.io/honeymoon-capital/italy/amalfi.jpg">
 <meta property="og:url" content="https://sachindrasahu.github.io/honeymoon-capital/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
 <style>
 :root{
-  --brand:#B0144F; --brand-dark:#8A0F3D; --brand-tint:#FCEEF3;
-  --green:#0B9E6F; --green-tint:#E7F6F0; --red:#E5484D;
-  --text:#1F2430; --muted:#6B7280; --line:#E7E9EE; --bg:#F5F6F8; --card:#FFFFFF;
-  --gold:#F5B400;
+  --sun:#FFD84D; --paper:#FFF7E0; --ink:#1B1442; --pink:#FF4D8D; --bull:#00A86B; --bear:#FF5A3C; --sky:#7CC8FF; --white:#fff;
+  --shadow:4px 4px 0 var(--ink);
+  --display:"Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  --body:Figtree, system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme:light;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:120px}
-body{margin:0;background:var(--bg);color:var(--text);font:14px/1.6 Poppins,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:var(--brand)}
-h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:600}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 var(--body);overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.02;letter-spacing:-.02em;text-wrap:balance}
 p{margin:0}
 button,input{font:inherit;color:inherit}
 button{cursor:pointer}
+a{color:inherit}
 [hidden]{display:none!important}
 .num{font-variant-numeric:tabular-nums}
-.container{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
 
-/* top bar */
-.topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
-.topbar .container{display:flex;align-items:center;gap:28px;height:60px}
-.logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:17px;color:var(--text);text-decoration:none;white-space:nowrap}
-.logo-mark{width:30px;height:30px;border-radius:8px;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:15px}
-.nav{display:flex;gap:22px;color:var(--muted);font-weight:500}
-.nav a{color:inherit;text-decoration:none}
-.nav a.on{color:var(--text)}
-.search{margin-left:auto;flex:0 1 280px;min-width:0;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--muted);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.avatar-sm{width:32px;height:32px;border-radius:50%;background:var(--brand-tint);color:var(--brand);display:grid;place-items:center;font-weight:600;font-size:13px;flex:none}
-@media (max-width:800px){.nav,.search{display:none}.avatar-sm{margin-left:auto}}
+/* buttons: everything that looks like a button IS a button */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:2.5px solid var(--ink);border-radius:14px;padding:12px 22px;font-weight:700;font-size:16px;background:var(--white);color:var(--ink);box-shadow:var(--shadow);text-decoration:none;transition:transform .12s, box-shadow .12s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn.buy{background:var(--bull);color:#fff}
+.btn.sell{background:var(--bear);color:#fff}
+.btn.pink{background:var(--pink);color:#fff}
+.btn.sun{background:var(--sun)}
+.btn.sm{padding:8px 14px;font-size:14px;border-radius:10px;box-shadow:3px 3px 0 var(--ink)}
 
-.ticker{background:#fff;border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;font-size:12.5px}
-.ticker-track{display:inline-flex;animation:tick 45s linear infinite;padding-block:7px}
-.ticker span{padding:0 18px;color:var(--muted)}
-.ticker b{color:var(--text);font-weight:500}
-.ticker .up{color:var(--green)}.ticker .dn{color:var(--red)}
-@keyframes tick{to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+/* header */
+.top{position:sticky;top:0;z-index:40;background:var(--ink);color:var(--paper)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.logo{font-family:var(--display);font-weight:800;font-size:22px;text-decoration:none;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.logo i{font-style:normal;background:var(--sun);color:var(--ink);border-radius:8px;padding:0 7px;transform:rotate(-4deg);display:inline-block}
+.links{display:flex;gap:4px;margin-left:auto}
+.links a{text-decoration:none;font-weight:600;font-size:15px;padding:8px 12px;border-radius:10px}
+.links a:hover{background:rgba(255,255,255,.12)}
+.top .btn{padding:8px 16px;font-size:15px;box-shadow:3px 3px 0 var(--sun);border-color:var(--sun)}
+@media (max-width:900px){.links{display:none}.top .btn{margin-left:auto}}
+@media (max-width:560px){.top .btn{display:none}}
 
-.crumbs{font-size:12.5px;color:var(--muted);padding-block:16px 10px}
-.crumbs a{color:var(--muted);text-decoration:none}
+.tape{background:var(--sun);border-block:2.5px solid var(--ink);overflow:hidden;white-space:nowrap;font-weight:700;font-size:15px}
+.tape-track{display:inline-flex;animation:tape 40s linear infinite;padding-block:9px}
+.tape span{padding:0 22px}
+.up{color:var(--bull)}.dn{color:var(--bear)}
+@keyframes tape{to{transform:translateX(-50%)}}
 
-/* layout */
-.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;align-items:start;padding-bottom:60px}
-@media (max-width:980px){.layout{grid-template-columns:minmax(0,1fr)}}
-.layout > *{min-width:0}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;min-width:0}
-@media (max-width:480px){.card{padding:16px}}
-.stack{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
-.card h2{font-size:18px;margin-bottom:14px}
-.card h2 small{font-weight:400;color:var(--muted);font-size:13px;margin-left:6px}
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center;padding-block:56px 64px}
+.hero > *{min-width:0}
+@media (max-width:900px){.hero{grid-template-columns:1fr;padding-block:36px 48px}}
+.bell{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:2.5px solid var(--ink);border-radius:99px;padding:6px 14px;font-weight:700;font-size:14px;box-shadow:3px 3px 0 var(--ink)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--bull);animation:blink 1.2s infinite}
+@keyframes blink{50%{opacity:.25}}
+.hero h1{font-size:clamp(46px,7.4vw,92px);font-weight:800;margin-block:18px 14px}
+.hero h1 .hl{background:var(--pink);color:#fff;padding:0 .12em;border-radius:12px;display:inline-block;transform:rotate(-1.5deg)}
+.hero .sub{font-size:clamp(19px,2.2vw,24px);font-weight:500;max-width:30ch}
+.quote{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-top:24px}
+.quote b{font-family:var(--display);font-size:clamp(34px,5vw,48px);font-weight:800}
+.quote .chg{font-weight:700;color:var(--bull);font-size:18px}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:10px;font-size:14px}
+.stats div span{display:block;opacity:.7}
+.stats div b{font-size:18px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
 
-/* company header */
-.co{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
-.co-logo{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--brand),#E0457B);color:#fff;font-weight:700;font-size:22px;display:grid;place-items:center;flex:none}
-.co-main{flex:1;min-width:0}
-.co h1{font-size:24px}
-.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-.tag{font-size:12px;font-weight:500;padding:3px 10px;border-radius:99px;background:var(--bg);color:var(--muted)}
-.tag.live{background:var(--green-tint);color:var(--green)}
-.tag.live::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:1px;animation:pulse 1.6s infinite}
-@keyframes pulse{50%{opacity:.3}}
-.closes{font-size:13px;color:var(--muted);margin-top:8px}
-.closes b{color:var(--text)}
+.couple{position:relative;height:470px}
+@media (max-width:900px){.couple{height:400px;max-width:520px;width:100%;margin:0 auto}}
+@media (max-width:480px){.couple{height:300px}}
+.pcard{position:absolute;width:51%;background:var(--white);border:2.5px solid var(--ink);border-radius:18px;padding:10px 10px 12px;box-shadow:6px 6px 0 var(--ink)}
+.pcard img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:10px;border:2px solid var(--ink)}
+.pcard .nm{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-weight:700;gap:8px}
+.pcard .nm span{font-family:var(--display);font-size:20px}
+.pcard .nm em{font-style:normal;font-size:13px;color:var(--bull);white-space:nowrap}
+.p1{left:0;top:30px;transform:rotate(-5deg)}
+.p2{right:0;top:0;transform:rotate(4deg)}
+.p1 img{object-position:72% 45%}
+.p2{z-index:2}
+.sticker{position:absolute;z-index:3;font-family:var(--display);font-weight:800;border:2.5px solid var(--ink);border-radius:12px;padding:6px 10px;font-size:14px;line-height:1.15;box-shadow:3px 3px 0 var(--ink);text-align:center}
+.s1{background:var(--sun);left:-6px;bottom:-4px;transform:rotate(-8deg)}
+@media (max-width:480px){.s1{bottom:-22px}}
+.s2{background:var(--sky);right:-10px;top:52%;transform:rotate(7deg)}
+.s3{background:var(--pink);color:#fff;left:42%;top:-14px;transform:rotate(-3deg);font-size:16px}
+@media (max-width:480px){.sticker{font-size:12px}.s3{font-size:13px}}
 
-.keystats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:20px;border-top:1px solid var(--line)}
-.keystats div{padding:14px 0 0}
-.keystats span{display:block;font-size:12px;color:var(--muted)}
-.keystats b{font-size:16px;font-weight:600}
-@media (max-width:640px){.keystats{grid-template-columns:1fr 1fr}}
+section{padding-block:64px}
+.sec-title{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.sec-title h2{font-size:clamp(34px,5vw,56px);font-weight:800}
+.sec-title p{max-width:46ch;font-size:17px}
+.panel{background:var(--white);border:2.5px solid var(--ink);border-radius:20px;box-shadow:6px 6px 0 var(--ink);padding:24px}
+@media (max-width:480px){.panel{padding:18px}}
+
+/* bull or bear */
+.poll{background:var(--ink);color:var(--paper)}
+.poll .wrap{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+@media (max-width:760px){.poll .wrap{grid-template-columns:1fr}}
+.poll h2{font-size:clamp(30px,4.4vw,48px)}
+.poll p{opacity:.8;margin-top:8px}
+.poll-btns{display:flex;gap:16px;position:relative;min-height:60px;flex-wrap:wrap}
+.poll .btn{border-color:var(--paper);box-shadow:4px 4px 0 var(--paper);font-size:19px;padding:14px 26px}
+#bear{transition:transform .25s}
+
+/* promoters */
+.promoters{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:820px){.promoters{grid-template-columns:1fr}}
+.promo{display:grid;grid-template-columns:170px 1fr;gap:20px}
+.promo > div{min-width:0}
+@media (max-width:480px){.promo{grid-template-columns:1fr}}
+.promo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:2.5px solid var(--ink);display:block}
+@media (max-width:480px){.promo img{aspect-ratio:1;max-width:220px}}
+.promo h3{font-size:32px;font-weight:800}
+.promo .role{font-weight:700;color:var(--pink);margin-block:4px 12px}
+.fund{width:100%;border-collapse:collapse;font-size:14.5px}
+.fund td{padding:7px 0;border-bottom:1.5px dashed rgba(27,20,66,.25);vertical-align:top}
+.fund td:first-child{opacity:.7;width:44%;padding-right:10px}
+.fund td:last-child{font-weight:600}
+.rating{display:inline-block;margin-top:12px;background:var(--bull);color:#fff;font-weight:800;font-family:var(--display);padding:5px 12px;border-radius:8px;transform:rotate(-2deg)}
 
 /* chart */
-.chart-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
-.chart-price{font-size:26px;font-weight:600}
-.chart-chg{font-size:13px;color:var(--green);font-weight:500}
-.ranges{display:flex;gap:4px}
-.ranges button{border:1px solid var(--line);background:#fff;border-radius:6px;padding:4px 10px;font-size:12px;color:var(--muted)}
-.ranges button.on{border-color:var(--brand);color:var(--brand);background:var(--brand-tint)}
-#chart{width:100%;height:auto;display:block;margin-top:12px}
-.note{font-size:12px;color:var(--muted)}
+.chart-wrap{overflow-x:auto}
+#candles{display:block;width:100%;min-width:640px;height:auto}
+.candle{cursor:pointer}
+.candle:hover rect,.candle:focus rect{stroke-width:3}
+.event-box{margin-top:16px;padding:14px 16px;border-radius:12px;background:var(--paper);border:2px solid var(--ink);font-weight:600;min-height:56px}
+.event-box b{color:var(--pink)}
+.hint{font-size:14px;opacity:.7;margin-top:8px}
 
-/* tabs */
-.tabs{position:sticky;top:60px;z-index:20;background:var(--bg);display:flex;gap:6px;overflow-x:auto;padding-block:10px;scrollbar-width:none}
-.tabs::-webkit-scrollbar{display:none}
-.tabs a{flex:none;text-decoration:none;color:var(--muted);font-weight:500;padding:7px 14px;border-radius:99px;background:#fff;border:1px solid var(--line);font-size:13px}
-.tabs a:hover{color:var(--text)}
+/* italy */
+.italy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:820px){.italy{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.italy{grid-template-columns:1fr}}
+.asset{margin:0;background:var(--white);border:2.5px solid var(--ink);border-radius:16px;overflow:hidden;box-shadow:5px 5px 0 var(--ink);position:relative}
+.asset img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-bottom:2.5px solid var(--ink)}
+.asset figcaption{padding:12px 14px 14px;font-size:14.5px}
+.asset figcaption b{display:flex;justify-content:space-between;gap:8px;font-family:var(--display);font-size:19px;margin-bottom:2px}
+.asset figcaption b em{font-style:normal;font-family:var(--body);font-size:13px;color:var(--bull);white-space:nowrap;align-self:center}
+.asset .flag{position:absolute;top:12px;left:12px;background:var(--sun);border:2px solid var(--ink);border-radius:8px;padding:2px 8px;font-weight:700;font-size:12.5px}
 
-/* tables */
-.tbl-wrap{overflow-x:auto}
-table{width:100%;border-collapse:collapse}
-th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-weight:500;color:var(--muted);font-size:12.5px;background:var(--bg)}
-td.r,th.r{text-align:right}
-.kv td:first-child{color:var(--muted);width:42%}
-.kv td:last-child{font-weight:500}
-tr.total td{font-weight:600;border-bottom:0}
-.x{font-weight:600}
+/* invest */
+.invest{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:28px;align-items:start}
+@media (max-width:960px){.invest{grid-template-columns:minmax(0,1fr)}}
+.tabs{display:flex;gap:10px;margin-bottom:18px}
+.tabs button{flex:1;border:2.5px solid var(--ink);border-radius:12px;padding:10px;font-weight:800;font-family:var(--display);font-size:18px;background:var(--white)}
+.tabs button[aria-pressed="true"].t-buy{background:var(--bull);color:#fff}
+.tabs button[aria-pressed="true"].t-sell{background:var(--bear);color:#fff}
+.group{font-weight:800;font-family:var(--display);font-size:20px;margin:18px 0 6px}
+.group:first-child{margin-top:0}
+.order{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1.5px dashed rgba(27,20,66,.25)}
+.order h4{font-family:var(--body);font-size:16px;font-weight:700;letter-spacing:0}
+.order p{font-size:13.5px;opacity:.75}
+.order .px{font-weight:800;text-align:right}
+.qty{display:flex;align-items:center;border:2px solid var(--ink);border-radius:10px;overflow:hidden;background:var(--white)}
+.qty button{width:34px;height:34px;border:0;background:var(--white);font-size:18px;font-weight:800}
+.qty button:hover{background:var(--sun)}
+.qty span{min-width:28px;text-align:center;font-weight:800}
+@media (max-width:480px){.order{grid-template-columns:1fr auto}.order .px{grid-column:1;grid-row:2;text-align:left}.order .qty{grid-column:2;grid-row:1/3}}
+.sell-msg{padding:22px;border-radius:14px;background:#FFE7E1;border:2px solid var(--bear);font-weight:600;font-size:17px}
+.ticket{position:sticky;top:84px}
+@media (max-width:960px){.ticket{position:static}}
+.ticket h3{font-size:26px}
+.ticket .row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1.5px dashed rgba(27,20,66,.25);font-size:15px}
+.ticket .tot{display:flex;justify-content:space-between;align-items:baseline;margin-block:14px}
+.ticket .tot b{font-family:var(--display);font-size:34px;font-weight:800}
+.ticket .btn{width:100%}
+.ticket .small{font-size:13.5px;opacity:.75;margin-top:12px;text-align:center}
 
-.gmp{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#FFF8E1;border:1px solid #FBE3A1;border-radius:10px;padding:14px 16px;margin-top:14px}
-.gmp b{font-size:18px;color:var(--green)}
-.gmp span{color:var(--muted);font-size:12.5px}
+/* status */
+.status{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:820px){.status{grid-template-columns:1fr}}
+.meter{height:30px;border:2.5px solid var(--ink);border-radius:99px;background:var(--paper);overflow:hidden;margin-block:14px 8px}
+.meter i{display:block;height:100%;background:repeating-linear-gradient(-45deg,var(--bull) 0 14px,#13C083 14px 28px);min-width:24px;transition:width 1.2s}
+.big{font-family:var(--display);font-size:clamp(40px,6vw,60px);font-weight:800}
+.mood{margin-top:12px;font-weight:700;font-size:18px}
+.subs{width:100%;border-collapse:collapse;margin-top:6px;font-size:15px}
+.subs th,.subs td{padding:9px 6px;text-align:left;border-bottom:1.5px dashed rgba(27,20,66,.25)}
+.subs th{font-size:13px;opacity:.7;font-weight:600}
+.subs .r{text-align:right}
+.bars{display:grid;gap:10px;margin-top:16px}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) 80px;gap:10px;font-size:14.5px;align-items:center}
+.bar .t{height:12px;background:var(--paper);border:2px solid var(--ink);border-radius:99px;overflow:hidden;grid-column:1/-1}
+.bar .t i{display:block;height:100%;background:var(--pink)}
+.bar b{text-align:right}
 
-/* about */
-.about p+p{margin-top:10px}
-.promoters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
-@media (max-width:600px){.promoters{grid-template-columns:1fr}}
-.promoter{display:flex;gap:12px;padding:14px;border:1px solid var(--line);border-radius:10px}
-.promoter .pi{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:600;color:#fff;flex:none}
-.promoter h4{font-size:15px}
-.promoter p{font-size:12.5px;color:var(--muted)}
-
-.sr{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media (max-width:700px){.sr{grid-template-columns:1fr}}
-.sr h3{font-size:15px;margin-bottom:8px}
-.sr ul{margin:0;padding-left:18px;display:grid;gap:6px;color:#3D4350}
-.sr .s h3{color:var(--green)}.sr .w h3{color:var(--red)}
-
-/* photos */
-.photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-@media (max-width:700px){.photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.photos figure{margin:0;min-width:0}
-.photos img{width:100%;max-width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:10px;display:block;background:var(--bg)}
-.photos figcaption{font-size:12.5px;margin-top:6px;color:var(--muted)}
-.photos figcaption b{display:block;color:var(--text);font-weight:600;font-size:13px}
-.photos .wide{grid-column:span 2;grid-row:span 2;display:flex;flex-direction:column}
-.photos .wide img{flex:1 1 0;height:0;min-height:0;aspect-ratio:auto}
-@media (max-width:700px){.photos .wide{grid-column:1/-1;grid-row:auto}.photos .wide img{flex:none;height:auto;aspect-ratio:3/2}}
-
-/* bids */
-.bid-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
-.bid-row:last-child{border-bottom:0}
-.bid-row h4{font-size:14px;font-weight:600}
-.bid-row p{font-size:12.5px;color:var(--muted)}
-.bid-row .price{font-weight:600;text-align:right;min-width:80px}
-.step{display:flex;align-items:center;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.step button{width:32px;height:32px;border:0;background:#fff;font-size:16px;color:var(--brand)}
-.step button:hover{background:var(--brand-tint)}
-.step span{min-width:26px;text-align:center;font-weight:600}
-.group-label{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-top:18px}
-.group-label:first-of-type{margin-top:0}
-
-/* sidebar */
-.side{position:sticky;top:76px;display:grid;gap:16px}
-@media (max-width:980px){.side{position:static}}
-.apply h3{font-size:16px}
-.apply .row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13px}
-.apply .row span{color:var(--muted)}
-.apply .tot{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px}
-.apply .tot b{font-size:22px}
-.btn{display:block;width:100%;border:0;border-radius:8px;padding:13px;font-weight:600;font-size:15px;background:var(--brand);color:#fff;text-align:center;text-decoration:none}
-.btn:hover{background:var(--brand-dark)}
-.btn.outline{background:#fff;color:var(--brand);border:1px solid var(--brand)}
-.btn.outline:hover{background:var(--brand-tint)}
-.btn.sm{width:auto;display:inline-block;padding:9px 16px;font-size:13px}
-.apply .hint{font-size:12px;color:var(--muted);margin-top:10px;text-align:center}
-.reco .chip{display:inline-block;background:var(--green);color:#fff;font-weight:600;padding:4px 12px;border-radius:6px;font-size:13px}
-.meter{display:flex;height:8px;border-radius:99px;overflow:hidden;margin:12px 0 6px}
-.meter i{display:block}
-.legend{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted)}
-.pitch{margin-top:12px;padding:12px;background:var(--bg);border-radius:8px;font-size:13px;min-height:64px}
-.reco .btns{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
-
-/* progress */
-.prog{height:10px;background:var(--bg);border-radius:99px;overflow:hidden;margin:10px 0 6px}
-.prog i{display:block;height:100%;background:var(--green);border-radius:99px;min-width:10px}
-.stage{font-size:13px;margin-top:8px;padding:10px 12px;border-radius:8px;background:var(--green-tint);color:#0A6B4C}
-
-/* allotment */
-.allot{display:flex;gap:10px;flex-wrap:wrap}
-.allot input{flex:1 1 180px;min-width:0;border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:#fff}
-.allot input:focus{outline:2px solid var(--brand);outline-offset:0;border-color:transparent}
-.result{margin-top:14px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.result-head{background:var(--green);color:#fff;padding:10px 14px;font-weight:600}
-.result table td{padding:9px 14px}
-.result table td:first-child{color:var(--muted);width:40%}
+/* certificate */
+.certgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:start}
+@media (max-width:820px){.certgrid{grid-template-columns:1fr}}
+.form{display:grid;gap:12px;margin-top:16px}
+.form input{border:2.5px solid var(--ink);border-radius:12px;padding:12px 14px;background:var(--white);font-size:16px;min-width:0}
+.cert{background:var(--sun);border:2.5px solid var(--ink);border-radius:20px;padding:28px 24px;text-align:center;box-shadow:6px 6px 0 var(--ink);position:relative;overflow:hidden}
+.cert::before{content:"";position:absolute;inset:10px;border:2px dashed var(--ink);border-radius:14px;pointer-events:none}
+.cert small{font-weight:700;letter-spacing:.06em}
+.cert h3{font-size:clamp(28px,4vw,40px);margin-block:10px 6px;font-weight:800;word-break:break-word}
+.cert .ttl{display:inline-block;background:var(--ink);color:var(--sun);font-family:var(--display);font-weight:800;padding:6px 14px;border-radius:10px;margin-top:8px;font-size:18px}
+.cert p{margin-top:12px;font-size:14px}
+.stamp{position:absolute;right:18px;top:18px;transform:rotate(12deg);border:3px solid var(--bear);color:var(--bear);font-family:var(--display);font-weight:800;padding:2px 8px;border-radius:8px;font-size:14px}
 
 /* faq */
-details{border-bottom:1px solid var(--line);padding:12px 0}
-details:last-child{border-bottom:0}
-summary{cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:10px}
-summary::after{content:"+";color:var(--muted);font-size:18px;line-height:1}
-details[open] summary::after{content:"–"}
-details p{color:var(--muted);margin-top:8px}
+.faq{display:grid;gap:12px}
+.faq details{background:var(--white);border:2.5px solid var(--ink);border-radius:14px;padding:14px 18px;box-shadow:3px 3px 0 var(--ink)}
+.faq summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:24px;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq p{margin-top:8px}
+
+/* closing */
+.closing{background:var(--pink);color:#fff;border-block:2.5px solid var(--ink)}
+.closing .wrap{display:grid;grid-template-columns:1fr 260px;gap:32px;align-items:center}
+@media (max-width:760px){.closing .wrap{grid-template-columns:1fr}}
+.closing h2{font-size:clamp(36px,5.4vw,64px);font-weight:800}
+.closing .count{display:flex;gap:10px;flex-wrap:wrap;margin-block:20px}
+.closing .count div{background:#fff;color:var(--ink);border:2.5px solid var(--ink);border-radius:12px;padding:8px 14px;text-align:center;min-width:74px;box-shadow:3px 3px 0 var(--ink)}
+.closing .count b{display:block;font-family:var(--display);font-size:30px;font-weight:800;line-height:1}
+.closing .count span{font-size:12px;font-weight:700}
+.qrcard{background:#fff;border:2.5px solid var(--ink);border-radius:18px;padding:12px;box-shadow:6px 6px 0 var(--ink);color:var(--ink);text-align:center;max-width:260px;justify-self:center}
+.qrcard img{display:block;width:100%;height:auto;border-radius:10px}
+.qrcard b{display:block;margin-top:6px;font-size:14px}
+
+footer{background:var(--ink);color:var(--paper);padding-block:30px;font-size:13.5px}
+footer p{max-width:80ch;opacity:.85}
 
 /* modal */
-.modal-bg{position:fixed;inset:0;background:rgba(15,18,28,.55);z-index:50;display:grid;place-items:center;padding:16px}
-.modal{background:#fff;border-radius:14px;width:min(420px,100%);max-height:calc(100vh - 32px);overflow:auto;padding:22px}
-.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.modal-head button{border:0;background:none;font-size:24px;color:var(--muted);line-height:1}
-.modal .amt{font-size:28px;font-weight:700;text-align:center;margin:6px 0 2px}
-.modal .sub{text-align:center;color:var(--muted);font-size:12.5px}
-.modal img{display:block;width:200px;max-width:100%;height:auto;margin:14px auto;border-radius:10px;border:1px solid var(--line)}
-.upi{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
-.upi code{font-family:inherit;font-weight:600;background:var(--bg);padding:6px 10px;border-radius:6px;user-select:all}
-.modal ol{padding-left:18px;color:var(--muted);font-size:13px;margin:10px 0 14px;display:grid;gap:4px}
+.modal-bg{position:fixed;inset:0;background:rgba(27,20,66,.6);z-index:60;display:grid;place-items:center;padding:16px}
+.modal{background:var(--white);border:2.5px solid var(--ink);border-radius:20px;box-shadow:8px 8px 0 var(--ink);width:min(420px,100%);max-height:calc(100vh - 32px);overflow:auto;padding:22px;text-align:center}
+.modal-head{display:flex;justify-content:space-between;align-items:center;text-align:left}
+.modal-head h3{font-size:24px}
+.modal-head button{border:2px solid var(--ink);background:var(--white);border-radius:10px;width:36px;height:36px;font-size:20px;font-weight:800}
+.modal .amt{font-family:var(--display);font-weight:800;font-size:40px;margin-top:8px}
+.modal img{display:block;width:190px;max-width:100%;height:auto;margin:12px auto;border-radius:10px}
+.upi{display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap}
+.upi code{font-family:var(--body);font-weight:700;background:var(--paper);border:2px solid var(--ink);padding:6px 10px;border-radius:8px;user-select:all}
+.modal ol{text-align:left;padding-left:20px;margin:14px 0;font-size:14.5px;display:grid;gap:4px}
+.modal .btn{width:100%}
 
-/* mobile apply bar */
+/* toast + confetti */
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:70;background:var(--ink);color:var(--paper);border:2.5px solid var(--sun);border-radius:14px;padding:12px 18px;font-weight:600;max-width:min(460px,calc(100% - 32px));text-align:center;box-shadow:4px 4px 0 var(--sun)}
+.confetti{position:fixed;top:-20px;z-index:80;width:10px;height:14px;border-radius:2px;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+
+/* mobile buy bar */
 .mbar{display:none}
-@media (max-width:980px){
-  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;border-top:1px solid var(--line);padding:10px max(16px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));gap:12px;align-items:center;box-shadow:0 -6px 20px rgba(0,0,0,.06)}
-  .mbar div{flex:1;font-size:12px;color:var(--muted)}
-  .mbar b{display:block;font-size:17px;color:var(--text)}
-  .mbar .btn{width:auto;padding:12px 22px}
-  body{padding-bottom:76px}
+@media (max-width:960px){
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--sun);border-top:2.5px solid var(--ink);padding:10px max(16px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));gap:12px;align-items:center}
+  .mbar div{flex:1;font-weight:600;font-size:13px}
+  .mbar b{display:block;font-family:var(--display);font-size:22px}
+  .mbar .btn{padding:10px 18px;box-shadow:3px 3px 0 var(--ink)}
+  body{padding-bottom:80px}
+  .toast{bottom:calc(96px + env(safe-area-inset-bottom))}
 }
-
-.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(90px + env(safe-area-inset-bottom));z-index:60;background:#1F2430;color:#fff;padding:12px 16px;border-radius:10px;font-size:13.5px;max-width:min(440px,calc(100% - 32px));text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-
-footer{background:#fff;border-top:1px solid var(--line);padding-block:28px;font-size:12px;color:var(--muted)}
-footer .fl{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px}
-footer .fl b{color:var(--text);font-size:14px}
-:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 </style>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="container">
-    <a class="logo" href="#"><span class="logo-mark">H</span>Honeymoon Capital</a>
-    <nav class="nav"><a href="#">Stocks</a><a href="#" class="on">IPO</a><a href="#">Mutual Funds</a><a href="#">Gelato</a></nav>
-    <div class="search">Search “honeymoon”, “Italy”, “please”</div>
-    <div class="avatar-sm" aria-hidden="true">You</div>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top"><i>HNYMN</i> <span class="lt">Honeymoon Capital</span></a>
+    <nav class="links" aria-label="Sections">
+      <a href="#promoters">The promoters</a>
+      <a href="#chart">Chart</a>
+      <a href="#italy">Italy</a>
+      <a href="#status">Status</a>
+      <a href="#certificate">Certificate</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn buy" href="#invest">Buy shares</a>
   </div>
 </header>
-<div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+<div class="tape" aria-hidden="true"><div class="tape-track" id="tape"></div></div>
 
-<div class="container">
-  <div class="crumbs"><a href="#">Home</a> › <a href="#">IPO</a> › <a href="#">Mainboard</a> › <span id="crumb-name">Sachindra &amp; Stuti Honeymoon Ltd.</span></div>
-
-  <div class="layout">
-    <main class="stack">
-      <section class="card">
-        <div class="co">
-          <div class="co-logo" id="co-logo">S&amp;S</div>
-          <div class="co-main">
-            <h1 id="co-name">Sachindra &amp; Stuti Honeymoon Ltd. IPO</h1>
-            <div class="tags"><span class="tag live">Open now</span><span class="tag">Mainboard</span><span class="tag">Sector: Romance</span><span class="tag">NSE: HNYMN</span></div>
-            <p class="closes">Bidding closes at departure for <b id="dest">Italy</b> · <b id="closes-in">—</b></p>
-          </div>
-        </div>
-        <div class="keystats num">
-          <div><span>Price range</span><b>₹999 – ₹49,999</b></div>
-          <div><span>Minimum investment</span><b>₹999</b></div>
-          <div><span>Issue size</span><b id="ks-issue">₹4,00,000</b></div>
-          <div><span>Subscribed</span><b id="ks-sub">0.00x</b></div>
-        </div>
-      </section>
-
-      <section class="card">
-        <div class="chart-head">
-          <div>
-            <div class="note">HNYMN · Grey market price</div>
-            <div class="chart-price num" id="cp">₹1,00,00,000</div>
-            <div class="chart-chg num" id="cc">+∞% love today</div>
-          </div>
-          <div class="ranges" id="ranges">
-            <button type="button" data-r="1D">1D</button><button type="button" data-r="1W">1W</button><button type="button" data-r="1M">1M</button><button type="button" data-r="1Y" class="on">1Y</button><button type="button" data-r="ALL">ALL</button>
-          </div>
-        </div>
-        <svg id="chart" viewBox="0 0 700 220" role="img" aria-label="Price chart that only goes up"></svg>
-        <p class="note" id="chart-note">Every dip on this chart was a fight about the guest list.</p>
-      </section>
-
-      <nav class="tabs" aria-label="Sections">
-        <a href="#details">IPO details</a><a href="#subscription">Subscription</a><a href="#about">About</a><a href="#site">Project site</a><a href="#financials">Financials</a><a href="#bid">Place bid</a><a href="#allotment">Allotment</a><a href="#faq">FAQs</a>
-      </nav>
-
-      <section class="card" id="details">
-        <h2>IPO details</h2>
-        <div class="tbl-wrap"><table class="kv num"><tbody id="kv"></tbody></table></div>
-        <div class="gmp"><div><span>Grey Market Premium (GMP)</span><br><b>▲ ₹∞</b></div><span>Source: aunties at the reception, who all agree this listing will be “very good, beta”.</span></div>
-      </section>
-
-      <section class="card" id="subscription">
-        <h2>Subscription status <small>Updated manually, with screaming</small></h2>
-        <div class="tbl-wrap"><table class="num">
-          <thead><tr><th>Category</th><th class="r">Reserved</th><th class="r">Subscribed</th></tr></thead>
-          <tbody id="subs"></tbody>
-        </table></div>
-        <div class="prog" aria-hidden="true"><i id="prog" style="width:0"></i></div>
-        <div class="legend num"><span id="raised-l">₹0 raised</span><span id="goal-l">Target ₹4,00,000</span></div>
-        <div class="stage" id="stage"></div>
-      </section>
-
-      <section class="card about" id="about">
-        <h2>About the company</h2>
-        <p>Sachindra &amp; Stuti Honeymoon Ltd. was incorporated after a long period of due diligence (dating), followed by a highly publicised merger (the wedding) on 5 and 7 February 2027. The merger was approved by both families, several aunties, and one neighbour who was not consulted but approved anyway.</p>
-        <p>The company is now raising a fresh issue to fund its first and most important international expansion: a honeymoon in Italy. The company has no revenue, no plans for revenue, and a very strong pipeline of pasta.</p>
-        <div class="promoters">
-          <div class="promoter"><div class="pi" style="background:#2F6FDE" id="p1i">S</div><div><h4 id="p1">Sachindra</h4><p>Promoter &amp; CEO (Chief Executive of Saying “Yes”). Proven record of losing every argument gracefully. Responsible for carrying all bags.</p></div></div>
-          <div class="promoter"><div class="pi" style="background:var(--brand)" id="p2i">S</div><div><h4 id="p2">Stuti</h4><p>Promoter &amp; Chief Decision Officer (all decisions). Planned an entire wedding while the CEO was still choosing a kurta.</p></div></div>
-        </div>
-      </section>
-
-      <section class="card sr">
-        <div class="s"><h3>Strengths</h3><ul>
-          <li>Strong promoter commitment. Exit is legally and socially impossible.</li>
-          <li>Two-member team with zero attrition since the merger.</li>
-          <li>Proven ability to eat at every event, including the haldi.</li>
-          <li>Highly experienced in taking photos at sunset.</li>
-        </ul></div>
-        <div class="w"><h3>Risks</h3><ul>
-          <li>Your contribution is non-refundable. The marriage, hopefully, is not.</li>
-          <li>No dividends. Returns are paid in postcards and one fridge magnet.</li>
-          <li>Key-person risk: if Sachindra forgets the passports, all forecasts are void.</li>
-          <li>The company may spend 30% of proceeds on gelato. Management considers this conservative.</li>
-        </ul></div>
-      </section>
-
-      <section class="card" id="site">
-        <h2>Project site photos <small>Italy, pending on-site inspection</small></h2>
-        <div class="photos">
-          <figure class="wide"><img src="italy/amalfi.jpg" alt="Positano on the Amalfi Coast" width="1200" height="800"><figcaption><b>Amalfi Coast · Registered office (proposed)</b>4,000 stairs. Sachindra has been told about 40.</figcaption></figure>
-          <figure><img src="italy/venice.jpg" alt="Gondolas on the Grand Canal in Venice" width="1200" height="800" loading="lazy"><figcaption><b>Venice · Waterfront unit</b>Flood risk: yes. Romance: also yes.</figcaption></figure>
-          <figure><img src="italy/florence.jpg" alt="Florence and the Duomo at sunrise" width="1200" height="800" loading="lazy"><figcaption><b>Florence · Heritage asset</b>Stuti will photograph the Duomo 300 times.</figcaption></figure>
-          <figure><img src="italy/tuscany.jpg" alt="Cypress-lined road through the Tuscan hills" width="1200" height="900" loading="lazy"><figcaption><b>Tuscany · Agri division</b>Wine audit, one glass at a time.</figcaption></figure>
-          <figure><img src="italy/rome.jpg" alt="The Colosseum in Rome" width="1200" height="875" loading="lazy"><figcaption><b>Rome · Legacy infrastructure</b>2,000 years and still standing. Target to beat.</figcaption></figure>
-          <figure><img src="italy/gelato.jpg" alt="A hand holding a gelato cone" width="1200" height="800" loading="lazy"><figcaption><b>Gelato · Treasury</b>Three scoops a day. Non-negotiable.</figcaption></figure>
-        </div>
-      </section>
-
-      <section class="card" id="financials">
-        <h2>Financials <small>₹ in lakhs, audited by Stuti’s mom</small></h2>
-        <div class="tbl-wrap"><table class="num">
-          <thead><tr><th>Particulars</th><th class="r">FY25 (Dating)</th><th class="r">FY26 (Engaged)</th><th class="r">FY27 (Married)</th></tr></thead>
-          <tbody>
-            <tr><td>Revenue</td><td class="r">0.00</td><td class="r">0.00</td><td class="r">Shagun (undisclosed)</td></tr>
-            <tr><td>Expenses</td><td class="r">0.40 <small style="color:var(--muted)">coffee</small></td><td class="r">1.20 <small style="color:var(--muted)">rings</small></td><td class="r" style="color:var(--red)">Everything</td></tr>
-            <tr><td>Net worth</td><td class="r">Positive</td><td class="r">Positive</td><td class="r">Emotionally positive</td></tr>
-            <tr><td>Love</td><td class="r" style="color:var(--green)">▲ 42%</td><td class="r" style="color:var(--green)">▲ 180%</td><td class="r" style="color:var(--green)">▲ Unlimited</td></tr>
-          </tbody>
-        </table></div>
-        <h2 style="margin-top:22px">Objects of the issue</h2>
-        <div class="tbl-wrap"><table class="num"><thead><tr><th>Use of proceeds</th><th class="r">Amount</th><th class="r">%</th></tr></thead><tbody id="objects"></tbody></table></div>
-      </section>
-
-      <section class="card" id="bid">
-        <h2>Place your bid</h2>
-        <p class="note" style="margin-bottom:12px">Pick a funding round, sponsor a specific bad decision, or both. Your total shows on the right. You pay us directly by UPI.</p>
-        <div class="group-label">Funding rounds</div>
-        <div id="rounds"></div>
-        <div class="group-label">Sponsor a bad decision</div>
-        <div id="items"></div>
-      </section>
-
-      <section class="card" id="allotment">
-        <h2>Check allotment status</h2>
-        <p class="note" style="margin-bottom:12px">Already paid? Enter your name and amount to see your official designation. Screenshot it and post it on the family group.</p>
-        <form class="allot" id="allot-form">
-          <input id="a-name" placeholder="Your name" autocomplete="name" aria-label="Your name">
-          <input id="a-amt" placeholder="Amount paid (₹)" inputmode="numeric" aria-label="Amount paid in rupees">
-          <button class="btn sm" type="submit">Check status</button>
-        </form>
-        <div class="result" id="result" hidden>
-          <div class="result-head">✓ Congratulations! Shares allotted</div>
-          <table><tbody>
-            <tr><td>Applicant</td><td id="r-name"></td></tr>
-            <tr><td>Designation</td><td id="r-title" style="font-weight:600;color:var(--brand)"></td></tr>
-            <tr><td>Shares allotted</td><td id="r-shares"></td></tr>
-            <tr><td>Voting rights</td><td>None</td></tr>
-            <tr><td>Gratitude</td><td>Unlimited</td></tr>
-          </tbody></table>
-        </div>
-      </section>
-
-      <section class="card" id="faq">
-        <h2>Frequently asked questions</h2>
-        <details><summary>Is this a real IPO?</summary><p>No. This is a honeymoon gift fund for friends and family. No shares exist, nothing is listed anywhere, and nobody is regulated, least of all the groom.</p></details>
-        <details><summary>Will I get my money back?</summary><p>No. You will get a postcard, a thank-you, and possibly a fridge magnet if supplies last.</p></details>
-        <details><summary>Can I send ₹101 instead?</summary><p>Yes, and we will love you for it. Shagun-sized investments are welcome. Your designation will be adjusted accordingly.</p></details>
-        <details><summary>My accountant says no.</summary><p>Your accountant does not believe in love. Please find a new accountant.</p></details>
-        <details><summary>When does the IPO close?</summary><p>When the plane takes off. After that we will be busy eating pasta.</p></details>
-      </section>
-    </main>
-
-    <aside class="side">
-      <div class="card apply" id="apply-card">
-        <h3>Apply for IPO</h3>
-        <div class="row"><span>Bids selected</span><b id="s-count" class="num">0</b></div>
-        <div class="row"><span>Price band</span><b class="num">₹999 – ₹49,999</b></div>
-        <div class="row"><span>Payment</span><b>UPI</b></div>
-        <div class="tot"><span class="note">Total amount</span><b class="num" id="s-total">₹0</b></div>
-        <button class="btn" style="margin-top:14px" id="apply" type="button">Apply now</button>
-        <p class="hint">Pick bids from the list, or just pay any amount you like.</p>
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <span class="bell"><span class="dot"></span>IPO OPEN · <span id="closes" class="num">closes at take-off</span></span>
+      <h1><span id="n1">Sachindra</span> &amp; <span id="n2">Stuti</span> are going <span class="hl">public.</span></h1>
+      <p class="sub">Before they go private in Italy. Buy a share of their honeymoon. Expect no returns.</p>
+      <div class="quote"><b class="num">₹1,00,00,000</b><span class="chg">▲ +∞% since the wedding</span></div>
+      <div class="stats num">
+        <div><span>Issue size</span><b id="h-goal">₹4,00,000</b></div>
+        <div><span>Subscribed</span><b id="h-sub">0.00x</b></div>
+        <div><span>Shares from</span><b>₹999</b></div>
       </div>
-      <div class="card reco">
-        <h3 style="font-size:15px">Analyst recommendation</h3>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"><span class="chip">SUBSCRIBE</span><span class="note">2 of 2 analysts</span></div>
-        <div class="meter"><i style="width:100%;background:var(--green)"></i></div>
-        <div class="legend"><span>Subscribe 100%</span><span>Avoid 0%</span></div>
-        <p class="note" style="margin-top:6px">Both analysts are the promoters.</p>
-        <div class="pitch" id="pitch">Still thinking? Our analysts have prepared several arguments.</div>
-        <div class="btns"><button class="btn sm" id="convince" type="button">Convince me</button><button class="btn sm outline" id="accountant" type="button">My accountant says no</button></div>
+      <div class="cta">
+        <a class="btn buy" href="#invest">▲ Buy HNYMN</a>
+        <button class="btn sell" type="button" id="hero-sell">▼ Sell</button>
       </div>
-    </aside>
+    </div>
+    <div class="couple">
+      <div class="pcard p1"><img src="us/sachindra.jpg" alt="Sachindra smiling on a mountain viewpoint" width="960" height="1280"><div class="nm"><span>Sachindra</span><em>SACH ▲ 12%</em></div></div>
+      <div class="pcard p2"><img src="us/stuti.jpg" alt="Stuti in big yellow sunglasses making peace signs" width="960" height="1280"><div class="nm"><span>Stuti</span><em>STUT ▲ 340%</em></div></div>
+      <div class="sticker s1">Already training<br>for Amalfi stairs</div>
+      <div class="sticker s2">Analyst rating:<br>STRONG BUY 😎</div>
+      <div class="sticker s3">MERGER COMPLETE ✓</div>
+    </div>
   </div>
-</div>
+
+  <section class="poll">
+    <div class="wrap">
+      <div>
+        <h2>Bullish or bearish on this marriage?</h2>
+        <p>Cast your vote. There is only one correct answer.</p>
+      </div>
+      <div class="poll-btns" id="poll">
+        <button class="btn buy" type="button" id="bull">🐂 Bullish</button>
+        <button class="btn sell" type="button" id="bear">🐻 Bearish</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="promoters">
+    <div class="wrap">
+      <div class="sec-title"><h2>Meet the promoters</h2><p>Two independent entities. One lifelong joint venture. Fully audited by both mothers.</p></div>
+      <div class="promoters">
+        <article class="panel promo">
+          <img src="us/sachindra.jpg" alt="Sachindra on a mountain viewpoint" width="960" height="1280" loading="lazy" style="object-position:72% 45%">
+          <div>
+            <h3>Sachindra</h3>
+            <div class="role">CEO · Chief Executive of Saying “Yes”</div>
+            <table class="fund"><tbody>
+              <tr><td>Ticker</td><td>SACH</td></tr>
+              <tr><td>52-week high</td><td>That mountain behind him</td></tr>
+              <tr><td>Core business</td><td>Carrying bags, finding parking, nodding</td></tr>
+              <tr><td>Biggest risk</td><td>Has never once won an argument</td></tr>
+            </tbody></table>
+            <span class="rating">BUY · steady compounder</span>
+          </div>
+        </article>
+        <article class="panel promo">
+          <img src="us/stuti.jpg" alt="Stuti in yellow sunglasses making peace signs" width="960" height="1280" loading="lazy" style="object-position:50% 35%">
+          <div>
+            <h3>Stuti</h3>
+            <div class="role">CDO · Chief Decision Officer (all decisions)</div>
+            <table class="fund"><tbody>
+              <tr><td>Ticker</td><td>STUT</td></tr>
+              <tr><td>Volatility</td><td>High. See sunglasses.</td></tr>
+              <tr><td>Core business</td><td>Planning everything, being right</td></tr>
+              <tr><td>Board seats</td><td>All of them</td></tr>
+            </tbody></table>
+            <span class="rating">STRONG BUY · market leader</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="chart">
+    <div class="wrap">
+      <div class="sec-title"><h2>The relationship chart</h2><p>Full price history of HNYMN. Tap any candle to see what happened.</p></div>
+      <div class="panel">
+        <div class="chart-wrap"><svg id="candles" viewBox="0 0 900 340" role="img" aria-label="Candlestick chart of the relationship, trending up"></svg></div>
+        <div class="event-box" id="event" aria-live="polite"></div>
+        <p class="hint">Analyst note: every red candle was about food.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="italy">
+    <div class="wrap">
+      <div class="sec-title"><h2>Assets under acquisition</h2><p>The promoters will now conduct rigorous on-site due diligence in Italy. Your money makes this possible.</p></div>
+      <div class="italy">
+        <figure class="asset"><span class="flag">🇮🇹 Prime asset</span><img src="italy/amalfi.jpg" alt="Positano on the Amalfi Coast" width="1200" height="800" loading="lazy"><figcaption><b>Amalfi Coast <em>▲ 4,000 stairs</em></b>Sachindra has been told about 40 of them.</figcaption></figure>
+        <figure class="asset"><img src="italy/venice.jpg" alt="Gondolas on the Grand Canal, Venice" width="1200" height="800" loading="lazy"><figcaption><b>Venice <em>▲ Romance</em></b>Flood risk: yes. Gondola risk: Sachindra falls in.</figcaption></figure>
+        <figure class="asset"><img src="italy/florence.jpg" alt="Florence and the Duomo at sunrise" width="1200" height="800" loading="lazy"><figcaption><b>Florence <em>▲ 300 photos</em></b>Stuti will photograph the Duomo 300 times. All will be posted.</figcaption></figure>
+        <figure class="asset"><img src="italy/tuscany.jpg" alt="Cypress-lined road through Tuscany" width="1200" height="900" loading="lazy"><figcaption><b>Tuscany <em>▲ Wine</em></b>Wine audit conducted one glass at a time.</figcaption></figure>
+        <figure class="asset"><img src="italy/rome.jpg" alt="The Colosseum, Rome" width="1200" height="875" loading="lazy"><figcaption><b>Rome <em>▲ 2,000 yrs</em></b>Still standing after 2,000 years. This marriage plans to beat that.</figcaption></figure>
+        <figure class="asset"><img src="italy/gelato.jpg" alt="A gelato cone" width="1200" height="800" loading="lazy"><figcaption><b>Gelato <em>▲ 3 scoops/day</em></b>Our most important daily position. Non-negotiable.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="invest">
+    <div class="wrap">
+      <div class="sec-title"><h2>Place your order</h2><p>Pick a funding round, sponsor a bad decision, or both. Then pay by UPI.</p></div>
+      <div class="invest">
+        <div class="panel">
+          <div class="tabs" role="group" aria-label="Order type">
+            <button type="button" class="t-buy" id="t-buy" aria-pressed="true">▲ BUY</button>
+            <button type="button" class="t-sell" id="t-sell" aria-pressed="false">▼ SELL</button>
+          </div>
+          <div id="buy-pane">
+            <div class="group">Funding rounds</div>
+            <div id="rounds"></div>
+            <div class="group">Sponsor a bad decision</div>
+            <div id="items"></div>
+          </div>
+          <div id="sell-pane" hidden>
+            <div class="sell-msg">Selling is not permitted. This marriage is a long-term hold with a lock-in period of forever. Please switch back to BUY.</div>
+          </div>
+        </div>
+        <aside class="panel ticket">
+          <h3>Order ticket</h3>
+          <div class="row"><span>Shares in cart</span><b id="o-count" class="num">0</b></div>
+          <div class="row"><span>Order type</span><b>Market (emotional)</b></div>
+          <div class="row"><span>Pay via</span><b>UPI</b></div>
+          <div class="tot"><span>Total</span><b class="num" id="o-total">₹0</b></div>
+          <button class="btn buy" type="button" id="place">Place order</button>
+          <p class="small">Don’t want to pick? Place the order anyway and pay any amount you like.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="status">
+    <div class="wrap">
+      <div class="sec-title"><h2>Subscription status</h2><p>Updated by the promoters whenever money lands, usually followed by screaming.</p></div>
+      <div class="status">
+        <div class="panel">
+          <div class="big num" id="raised">₹0</div>
+          <div class="num" id="of">raised of ₹4,00,000</div>
+          <div class="meter" role="progressbar" aria-label="Funding progress" id="meter-bar"><i id="meter" style="width:0"></i></div>
+          <div class="mood" id="mood"></div>
+          <table class="subs num"><thead><tr><th>Category</th><th class="r">Subscribed</th></tr></thead><tbody id="subs"></tbody></table>
+        </div>
+        <div class="panel">
+          <h3 style="font-size:26px">Where the money goes</h3>
+          <div class="bars num" id="bars"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificate">
+    <div class="wrap certgrid">
+      <div>
+        <div class="sec-title" style="margin-bottom:8px"><h2>Get your share certificate</h2></div>
+        <p style="font-size:17px">Paid? Enter your name and amount. Screenshot your certificate. Post it on the family group. Shame your cousins.</p>
+        <form class="form" id="cert-form">
+          <input id="c-name" placeholder="Your name" autocomplete="name" aria-label="Your name">
+          <input id="c-amt" placeholder="Amount paid (₹)" inputmode="numeric" aria-label="Amount paid in rupees">
+          <button class="btn pink" type="submit">Issue my certificate</button>
+        </form>
+      </div>
+      <div class="cert" id="cert">
+        <span class="stamp">ALLOTTED</span>
+        <small>HONEYMOON CAPITAL · SHARE CERTIFICATE</small>
+        <h3 id="c-who">Your Name Here</h3>
+        <div>is hereby appointed</div>
+        <div class="ttl" id="c-title">Executive VP of Honeymoon Logistics</div>
+        <p id="c-fine">1 share of HNYMN. Voting rights: none. Gratitude: unlimited.<br>Signed, Sachindra &amp; Stuti</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-title"><h2>Questions investors ask</h2></div>
+      <div class="faq">
+        <details><summary>Is this a real IPO?</summary><p>No. It’s a honeymoon gift fund for our friends and family, dressed up as a stock listing. No shares exist and nothing is listed anywhere.</p></details>
+        <details><summary>Will I get my money back?</summary><p>No. You get a postcard, a thank-you, and possibly a fridge magnet if supplies last.</p></details>
+        <details><summary>Can I send ₹101 instead?</summary><p>Yes, and we’ll love you for it. Shagun-sized investments are welcome.</p></details>
+        <details><summary>My accountant says no.</summary><p>Your accountant doesn’t believe in love. Please find a new accountant.</p></details>
+        <details><summary>When does the IPO close?</summary><p>When the plane takes off. After that we’ll be busy eating pasta.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <div>
+        <h2>The bell rings at take-off.</h2>
+        <div class="count num" id="count"></div>
+        <button class="btn sun" type="button" id="closing-buy">Pay any amount now</button>
+      </div>
+      <div class="qrcard"><img src="upi-qr.jpg" alt="UPI QR code for sachindrasahu5@oksbi" width="921" height="1280" loading="lazy"><b>Scan with any UPI app</b></div>
+    </div>
+  </section>
+</main>
 
 <footer>
-  <div class="container">
-    <div class="fl"><b>Honeymoon Capital</b><span>Made in a hurry between the sangeet and the reception.</span></div>
-    <p>Investments in love are subject to emotional risks. Read all wedding-related documents carefully before investing. Past performance (the wedding buffet) is not indicative of future appetite. This page is a joke and a honeymoon gift fund between friends. It is not a real company, security, IPO or charity, and it is not registered with any regulator.</p>
+  <div class="wrap">
+    <p>Investments in love are subject to emotional risks. Read all wedding-related documents carefully before investing. Past performance (the wedding buffet) is not indicative of future appetite. This page is a joke and a honeymoon gift fund between friends. It is not a real company, security or IPO, and is not registered with any regulator.</p>
   </div>
 </footer>
 
-<div class="mbar"><div>Total amount<b class="num" id="m-total">₹0</b></div><button class="btn" id="m-apply" type="button">Apply now</button></div>
+<div class="mbar"><div>Your order<b class="num" id="m-total">₹0</b></div><button class="btn buy" type="button" id="m-place">Place order</button></div>
 
 <div class="modal-bg" id="modal" hidden>
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="m-title">
-    <div class="modal-head"><h3 id="m-title">Complete your application</h3><button type="button" id="m-close" aria-label="Close">×</button></div>
+    <div class="modal-head"><h3 id="m-title">Confirm your order</h3><button type="button" id="m-close" aria-label="Close">×</button></div>
     <div class="amt num" id="m-amt">₹0</div>
-    <div class="sub" id="m-sub">Any amount works. Scan to pay.</div>
+    <div id="m-sub" style="font-size:14.5px"></div>
     <img src="upi-qr.jpg" alt="UPI QR code for sachindrasahu5@oksbi" width="921" height="1280">
-    <div class="upi"><code id="upi-id">sachindrasahu5@oksbi</code><button class="btn sm outline" type="button" id="copy-upi">Copy</button></div>
+    <div class="upi"><code id="upi-id">sachindrasahu5@oksbi</code><button class="btn sm" type="button" id="copy">Copy</button></div>
     <ol>
-      <li>Scan the QR or pay the UPI ID from GPay, PhonePe or Paytm.</li>
-      <li>Add the note “HNYMN IPO”.</li>
-      <li>Send us a screenshot so we can scream and update the subscription status.</li>
+      <li>Scan the QR, or pay the UPI ID from GPay, PhonePe or Paytm.</li>
+      <li>Add the note “HNYMN shares”.</li>
+      <li>Send us a screenshot so we can scream.</li>
     </ol>
-    <a class="btn" id="upi-link" href="#">Open UPI app</a>
+    <a class="btn buy" id="upi-link" href="#">Open my UPI app</a>
   </div>
 </div>
 <div class="toast" id="toast" hidden role="status"></div>
@@ -444,12 +513,10 @@ footer .fl b{color:var(--text);font-size:14px}
 const CONFIG = {
   groom: "Sachindra",
   bride: "Stuti",
-  destination: "Italy",
-  goal: 400000,              // target in ₹
-  raised: 0,                 // update as money comes in
-  investors: 0,              // number of people who paid
-  // money raised from each group (₹), for the subscription table
-  byGroup: { family: 0, friends: 0, colleagues: 0 },
+  goal: 400000,
+  raised: 0,
+  investors: 0,
+  byGroup: { family: 0, friends: 0, colleagues: 0 },   // ₹ from each group
   departure: "2027-02-14T06:00:00+05:30",
   upi: "sachindrasahu5@oksbi",
   upiName: "Sachindra Sahu"
@@ -458,134 +525,147 @@ const CONFIG = {
 
 const $ = id => document.getElementById(id);
 const inr = n => "₹" + Math.round(n).toLocaleString("en-IN");
-const fmtDate = d => new Date(d).toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"});
 
-// ticker
-const tick=[["LOVE","+100.00%","up"],["SAVINGS","-89.40%","dn"],["FAMILY PRESSURE","+240.00%","up"],["WEDDING DEBT","+312.50%","dn"],["GELATO FUTURES","+418.00%","up"],["PASTA RESERVES","+73.20%","up"],["SLEEP","-64.10%","dn"],["AUNTY OPINIONS","+999.00%","dn"],["SUNSET PHOTOS","+57.80%","up"],["NIFTY ROMANCE","+21.30%","up"]];
-const th=tick.map(([a,b,c])=>`<span><b>${a}</b> <span class="${c}">${b}</span></span>`).join("");
-$("ticker").innerHTML=th+th;
+/* toast + confetti */
+let tt; function toast(m){const t=$("toast");t.textContent=m;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,3200);}
+function confetti(n=70){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const cols=["#FF4D8D","#FFD84D","#00A86B","#7CC8FF","#1B1442"];
+  for(let i=0;i<n;i++){const c=document.createElement("i");c.className="confetti";c.style.left=Math.random()*100+"vw";c.style.background=cols[i%cols.length];c.style.animationDuration=(1.6+Math.random()*1.8)+"s";c.style.animationDelay=(Math.random()*.4)+"s";document.body.appendChild(c);setTimeout(()=>c.remove(),4200);}
+}
 
-// IPO details
-const kv=[
-  ["IPO dates", "Open now · closes at departure"],
-  ["Listing date", fmtDate(CONFIG.departure)],
-  ["Listing at", "Amalfi Stock Exchange (on arrival)"],
-  ["Price band", "₹999 to ₹49,999 per share"],
-  ["Lot size", "1 share (roughly one cocktail)"],
-  ["Issue size", inr(CONFIG.goal) + " · 100% fresh issue"],
-  ["Issue type", "Book built, emotionally"],
-  ["Face value", "Two faces, both smiling"],
-  ["Promoter holding", "100% pre-issue · 100% post-issue (we keep each other)"],
-  ["Lead manager", "Mom"],
-  ["Registrar", "Stuti (keeps all the records)"]
+/* tape */
+const tape=[["LOVE","▲ 100%","up"],["SAVINGS","▼ 89%","dn"],["FAMILY PRESSURE","▲ 240%","up"],["GELATO FUTURES","▲ 418%","up"],["WEDDING DEBT","▲ 312%","dn"],["SLEEP","▼ 64%","dn"],["PASTA RESERVES","▲ 73%","up"],["AUNTY OPINIONS","▲ 999%","dn"],["SACH","▲ 12%","up"],["STUT","▲ 340%","up"]];
+const th=tape.map(([a,b,c])=>`<span>${a} <span class="${c}">${b}</span></span>`).join("");
+$("tape").innerHTML=th+th;
+
+/* sell buttons */
+const sellLines=["Selling is not permitted. This is a long-term hold.","Nice try. Lock-in period: forever.","Sell orders are routed directly to Stuti, who has rejected them.","Error 404: exit strategy not found."];
+let si=0; const sell=()=>toast(sellLines[si++%sellLines.length]);
+$("hero-sell").onclick=sell;
+
+/* bull / bear */
+$("bull").onclick=()=>{confetti();toast("Correct answer. You are a person of excellent judgement.");};
+const bear=$("bear"); let dodges=0;
+function dodge(){
+  dodges++;
+  const x=(Math.random()*160-80)|0, y=(Math.random()*60-30)|0;
+  bear.style.transform=`translate(${x}px,${y}px) rotate(${x/6}deg)`;
+  if(dodges===4) bear.textContent="🐻 Please no";
+  if(dodges===7) bear.textContent="🐻 Stop it";
+}
+bear.addEventListener("mouseenter",()=>{ if(matchMedia("(hover:hover)").matches) dodge(); });
+bear.addEventListener("click",()=>{ dodge(); toast(["Bears are not allowed at this wedding.","The bear button has fled to Italy.","Your vote has been converted to Bullish. You're welcome."][dodges%3]); });
+
+/* candlestick chart */
+const events=[
+  {l:"First chat",o:10,c:22,h:26,lo:8,t:"First conversation. Stock opens. Analysts mildly interested."},
+  {l:"First date",o:22,c:38,h:42,lo:20,t:"First date. Somebody ordered too much food. Strong buying."},
+  {l:"Food fight",o:38,c:31,h:40,lo:28,t:"First fight. It was about food. It is always about food."},
+  {l:"Made up",o:31,c:50,h:54,lo:30,t:"Made up over more food. Market rallies."},
+  {l:"Families met",o:50,c:46,h:58,lo:40,t:"Families met. Extreme volatility. Everyone had opinions."},
+  {l:"Said yes",o:46,c:72,h:76,lo:45,t:"The proposal. She said yes. Circuit breaker hit on the upside."},
+  {l:"Wedding prep",o:72,c:66,h:78,lo:60,t:"Wedding planning. Guest list negotiations. Savings crash."},
+  {l:"5 & 7 Feb",o:66,c:90,h:94,lo:64,t:"The wedding, 5 and 7 February 2027. Merger complete. All-time high."},
+  {l:"Italy",o:90,c:100,h:104,lo:88,t:"Italy (projected). Depends entirely on you. No pressure. Some pressure.",proj:true}
 ];
-$("kv").innerHTML=kv.map(([k,v])=>`<tr><td>${k}</td><td>${v}</td></tr>`).join("");
-
-// subscription
 (function(){
-  const g=CONFIG.goal, groups=[["Family (QIB, Quite Insistent Buyers)",.4,CONFIG.byGroup.family],["Friends (NII, Nice Individual Investors)",.4,CONFIG.byGroup.friends],["Colleagues (Retail)",.2,CONFIG.byGroup.colleagues]];
-  const x=(raised,share)=> (raised/(g*share)).toFixed(2)+"x";
-  $("subs").innerHTML = groups.map(([n,s,r])=>`<tr><td>${n}</td><td class="r">${Math.round(s*100)}%</td><td class="r x">${x(r,s)}</td></tr>`).join("")
-    + `<tr><td>Exes</td><td class="r">0%</td><td class="r" style="color:var(--muted)">Not eligible</td></tr>`
-    + `<tr class="total"><td>Total</td><td class="r">100%</td><td class="r x">${x(CONFIG.raised,1)}</td></tr>`;
-  const pct=Math.min(100,CONFIG.raised/g*100);
-  $("ks-sub").textContent=(CONFIG.raised/g).toFixed(2)+"x";
-  $("ks-issue").textContent=inr(g);
-  $("raised-l").textContent=`${inr(CONFIG.raised)} raised · ${CONFIG.investors} investor${CONFIG.investors===1?"":"s"}`;
-  $("goal-l").textContent="Target "+inr(g);
-  requestAnimationFrame(()=>$("prog").style.width=pct+"%");
-  const stages=[[0,"Status: still considering a local swimming pool."],[25,"Status: economy class is looking promising."],[50,"Status: we've found rooms with actual sea views."],[75,"Status: almost there. Champagne on standby."],[100,"Status: fully subscribed. Arrivederci!"]];
-  $("stage").textContent=stages.filter(([s])=>pct>=s).pop()[1];
+  const W=900,H=340,L=20,R=20,T=24,B=50,n=events.length,step=(W-L-R)/n,max=110;
+  const y=v=>T+(H-T-B)*(1-v/max);
+  let s="";
+  [25,50,75,100].forEach(g=>{s+=`<line x1="${L}" x2="${W-R}" y1="${y(g)}" y2="${y(g)}" stroke="#1B1442" stroke-opacity=".1" stroke-dasharray="4 6"/>`;});
+  events.forEach((e,i)=>{
+    const cx=L+step*i+step/2, up=e.c>=e.o, col=up?"#00A86B":"#FF5A3C", top=y(Math.max(e.o,e.c)), bot=y(Math.min(e.o,e.c));
+    s+=`<g class="candle" tabindex="0" role="button" data-i="${i}" aria-label="${e.l}">
+      <rect x="${cx-step/2}" y="${T}" width="${step}" height="${H-T-B}" fill="transparent"/>
+      <line x1="${cx}" x2="${cx}" y1="${y(e.h)}" y2="${y(e.lo)}" stroke="#1B1442" stroke-width="2.5"/>
+      <rect x="${cx-18}" y="${top}" width="36" height="${Math.max(6,bot-top)}" rx="4" fill="${col}" stroke="#1B1442" stroke-width="2.5" ${e.proj?'stroke-dasharray="5 4" fill-opacity=".55"':''}/>
+      <text x="${cx}" y="${H-B+24}" text-anchor="middle" font-size="14" font-weight="700" fill="#1B1442" font-family="Figtree,sans-serif">${e.l}</text>
+    </g>`;
+  });
+  const lx=L+step*(n-1)+step/2;
+  s+=`<text x="${lx}" y="${y(104)-10}" text-anchor="middle" font-size="13" font-weight="800" fill="#FF4D8D" font-family="Bricolage Grotesque,sans-serif">YOU ARE HERE ↓</text>`;
+  $("candles").innerHTML=s;
+  const show=i=>{const e=events[i];$("event").innerHTML=`<b>${e.l}:</b> ${e.t}`;document.querySelectorAll(".candle rect:nth-of-type(2)").forEach((r,j)=>r.setAttribute("stroke-width",j===i?"4":"2.5"));};
+  $("candles").addEventListener("click",e=>{const g=e.target.closest(".candle");if(g)show(+g.dataset.i);});
+  $("candles").addEventListener("keydown",e=>{const g=e.target.closest(".candle");if(g&&(e.key==="Enter"||e.key===" ")){e.preventDefault();show(+g.dataset.i);}});
+  show(7);
 })();
 
-// objects of the issue
-const objects=[["Flights (two seats, ideally together)",32],["Sea-view suite on the Amalfi Coast",28],["Cocktails, for marriage counselling",14],["Emergency apology gifts",10],["Room service at 2 a.m.",9],["Couples massage, for conflict resolution",5],["Fridge magnets for investors",2]];
-$("objects").innerHTML=objects.map(([n,p])=>`<tr><td>${n}</td><td class="r">${inr(CONFIG.goal*p/100)}</td><td class="r">${p}%</td></tr>`).join("")+`<tr class="total"><td>Total</td><td class="r">${inr(CONFIG.goal)}</td><td class="r">100%</td></tr>`;
-
-// chart
-const series={
-  "1D":{pts:[40,42,41,45,44,50,49,55,58,57,63,66],note:"Intraday spike at 2 p.m. when the caterer confirmed paneer.",chg:"+65.0% today"},
-  "1W":{pts:[30,35,33,40,46,44,52,60,58,66,72,80],note:"Wedding week. Volume was very high, mostly sweets.",chg:"+166.7% this week"},
-  "1M":{pts:[20,28,24,30,26,38,45,42,50,61,70,78],note:"The dip in week two was the seating chart.",chg:"+290.0% this month"},
-  "1Y":{pts:[10,14,12,20,18,26,24,35,40,38,55,70,68,82,95],note:"Every dip on this chart was a fight about the guest list.",chg:"+∞% love this year"},
-  "ALL":{pts:[2,3,5,4,8,12,10,18,25,22,35,48,60,72,90,100],note:"Since the first coffee date. No exits recorded.",chg:"All-time high, every day"}
-};
-function drawChart(r){
-  const s=series[r], p=s.pts, W=700,H=220,L=8,R=8,T=10,B=24;
-  const max=Math.max(...p)*1.1, min=0;
-  const x=i=>L+i*(W-L-R)/(p.length-1), y=v=>T+(H-T-B)*(1-(v-min)/(max-min));
-  const d=p.map((v,i)=>(i?"L":"M")+x(i).toFixed(1)+","+y(v).toFixed(1)).join("");
-  const grid=[.25,.5,.75].map(f=>`<line x1="${L}" x2="${W-R}" y1="${T+(H-T-B)*f}" y2="${T+(H-T-B)*f}" stroke="#EEF0F3"/>`).join("");
-  $("chart").innerHTML=`<defs><linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B9E6F" stop-opacity=".18"/><stop offset="1" stop-color="#0B9E6F" stop-opacity="0"/></linearGradient></defs>${grid}<path d="${d}L${x(p.length-1)},${H-B}L${x(0)},${H-B}Z" fill="url(#gf)"/><path d="${d}" fill="none" stroke="#0B9E6F" stroke-width="2.2" stroke-linejoin="round"/><circle cx="${x(p.length-1)}" cy="${y(p[p.length-1])}" r="4.5" fill="#0B9E6F"/><text x="${L}" y="${H-6}" font-size="11" fill="#6B7280" font-family="Poppins,sans-serif">${r==="ALL"?"First coffee":"Then"}</text><text x="${W-R}" y="${H-6}" font-size="11" fill="#6B7280" text-anchor="end" font-family="Poppins,sans-serif">Now</text>`;
-  $("chart-note").textContent=s.note; $("cc").textContent=s.chg;
-  document.querySelectorAll("#ranges button").forEach(b=>b.classList.toggle("on",b.dataset.r===r));
-}
-$("ranges").addEventListener("click",e=>{const b=e.target.closest("button"); if(b) drawChart(b.dataset.r);});
-drawChart("1Y");
-
-// bids
-const rounds=[["Pre-IPO","Emotional equity and a heartfelt thank-you.",999],["Seed","One cocktail, raised in your honour.",2499],["Series A","Sponsor a romantic dinner. We’ll say your name between bites.",5999],["Series B","Upgrade our room. Upgrade your karma.",14999],["Anchor investor","We might name a future houseplant after you.",49999]];
-const items=[["Gelato Liquidity Facility","Unlimited gelato for a week",3000],["Liquid Marriage Counselling","Two cocktails on the Amalfi Coast",2500],["Last-Mile Romance Logistics","Vespa rental in Tuscany",6500],["Venetian Waterway Due Diligence","Gondola ride in Venice",9000],["Conflict Resolution Package","Couples massage",12000],["Prevent Future Arguments","Candlelit dinner in Florence",18000],["Coastal Expansion Strategy","Private boat day on the Amalfi Coast",22000],["Marriage Survival Suite","Room upgrade",75000]];
-const all=[...rounds.map(r=>({n:r[0],d:r[1],p:r[2]})),...items.map(i=>({n:i[0],d:"Real name: "+i[1],p:i[2]}))];
-const qty=all.map(()=>0);
-const row=(o,i)=>`<div class="bid-row"><div><h4>${o.n}</h4><p>${o.d}</p></div><div class="price num">${inr(o.p)}</div><div class="step"><button type="button" data-i="${i}" data-d="-1" aria-label="Remove ${o.n}">−</button><span class="num" id="q${i}">0</span><button type="button" data-i="${i}" data-d="1" aria-label="Add ${o.n}">+</button></div></div>`;
-$("rounds").innerHTML=all.slice(0,rounds.length).map((o,i)=>row(o,i)).join("");
+/* order book */
+const rounds=[["Pre-IPO","Emotional equity and a heartfelt thank-you",999],["Seed round","One cocktail, raised in your honour",2499],["Series A","A romantic dinner. We’ll say your name between bites",5999],["Series B","Upgrade our room. Upgrade your karma",14999],["Anchor investor","We might name a future houseplant after you",49999]];
+const items=[["Gelato Liquidity Facility","Unlimited gelato for a week",3000],["Liquid Marriage Counselling","Two cocktails on the Amalfi Coast",2500],["Last-Mile Romance Logistics","Vespa rental in Tuscany",6500],["Venetian Waterway Due Diligence","Gondola ride in Venice",9000],["Conflict Resolution Package","Couples massage",12000],["Prevent Future Arguments","Candlelit dinner in Florence",18000],["Coastal Expansion Strategy","Private boat day, Amalfi Coast",22000],["Marriage Survival Suite","Room upgrade",75000]];
+const all=[...rounds.map(r=>({n:r[0],d:r[1],p:r[2]})),...items.map(i=>({n:i[0],d:i[1],p:i[2]}))];
+const q=all.map(()=>0);
+const row=(o,i)=>`<div class="order"><div><h4>${o.n}</h4><p>${o.d}</p></div><div class="px num">${inr(o.p)}</div><div class="qty"><button type="button" data-i="${i}" data-d="-1" aria-label="Remove ${o.n}">−</button><span class="num" id="q${i}">0</span><button type="button" data-i="${i}" data-d="1" aria-label="Add ${o.n}">+</button></div></div>`;
+$("rounds").innerHTML=all.slice(0,rounds.length).map(row).join("");
 $("items").innerHTML=all.slice(rounds.length).map((o,i)=>row(o,i+rounds.length)).join("");
-const addLines=["Congratulations. You’ve contributed more to this marriage than most relatives.","Bid added. Your approval rating with the promoters is up 40 points.","Excellent. Your portfolio is now 100% romance.","Bold move. Somewhere in Italy, a cocktail umbrella just opened."];
+const addLines=["Congratulations. You’ve contributed more to this marriage than most relatives.","Order added. Stuti has approved this message.","Bold move. Somewhere in Italy, a cocktail umbrella just opened.","Added. Sachindra is doing a small dance."];
 let adds=0;
-document.addEventListener("click",e=>{
-  const b=e.target.closest("[data-i]"); if(!b) return;
-  const i=+b.dataset.i, d=+b.dataset.d; qty[i]=Math.max(0,qty[i]+d); $("q"+i).textContent=qty[i];
-  if(d>0) toast(addLines[adds++%addLines.length]);
+document.querySelector(".invest").addEventListener("click",e=>{
+  const b=e.target.closest(".qty button"); if(!b) return;
+  const i=+b.dataset.i,d=+b.dataset.d; q[i]=Math.max(0,q[i]+d); $("q"+i).textContent=q[i];
+  if(d>0){toast(addLines[adds++%addLines.length]); if(adds===1) confetti(30);}
   update();
 });
-function total(){return all.reduce((s,o,i)=>s+o.p*qty[i],0);}
-function update(){
-  const t=total(), c=qty.reduce((a,b)=>a+b,0);
-  $("s-total").textContent=inr(t); $("m-total").textContent=inr(t); $("s-count").textContent=c;
-}
+const total=()=>all.reduce((s,o,i)=>s+o.p*q[i],0);
+function update(){const t=total();$("o-total").textContent=inr(t);$("m-total").textContent=inr(t);$("o-count").textContent=q.reduce((a,b)=>a+b,0);}
 update();
+function setTab(buy){$("t-buy").setAttribute("aria-pressed",buy);$("t-sell").setAttribute("aria-pressed",!buy);$("buy-pane").hidden=!buy;$("sell-pane").hidden=buy;if(!buy)sell();}
+$("t-buy").onclick=()=>setTab(true); $("t-sell").onclick=()=>setTab(false);
 
-// modal
+/* modal */
 function openModal(){
   const t=total();
   $("m-amt").textContent=t?inr(t):"Any amount";
-  $("m-sub").textContent=t?"Scan the QR and pay this amount.":"Pick bids first, or pay whatever feels right. ₹101 counts.";
-  $("upi-link").href=`upi://pay?pa=${encodeURIComponent(CONFIG.upi)}&pn=${encodeURIComponent(CONFIG.upiName)}${t?"&am="+t:""}&cu=INR&tn=${encodeURIComponent("HNYMN IPO")}`;
+  $("m-sub").textContent=t?"Scan and pay this amount.":"No shares picked? Pay whatever feels right. ₹101 counts.";
+  $("upi-link").href=`upi://pay?pa=${encodeURIComponent(CONFIG.upi)}&pn=${encodeURIComponent(CONFIG.upiName)}${t?"&am="+t:""}&cu=INR&tn=${encodeURIComponent("HNYMN shares")}`;
   $("modal").hidden=false; $("m-close").focus();
 }
-$("apply").onclick=openModal; $("m-apply").onclick=openModal;
+["place","m-place","closing-buy"].forEach(id=>$(id).onclick=openModal);
 $("m-close").onclick=()=>$("modal").hidden=true;
 $("modal").addEventListener("click",e=>{if(e.target.id==="modal")$("modal").hidden=true;});
 document.addEventListener("keydown",e=>{if(e.key==="Escape")$("modal").hidden=true;});
-$("copy-upi").onclick=()=>{
-  const done=()=>toast("UPI ID copied.");
+$("copy").onclick=()=>{
   const sel=()=>{const r=document.createRange();r.selectNodeContents($("upi-id"));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Selected. Press copy.");};
-  try{navigator.clipboard.writeText(CONFIG.upi).then(done,sel);}catch(_){sel();}
+  try{navigator.clipboard.writeText(CONFIG.upi).then(()=>toast("UPI ID copied. Your wallet is trembling."),sel);}catch(_){sel();}
 };
 
-// toast
-let tt; function toast(m){const t=$("toast");t.textContent=m;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,3000);}
+/* status */
+(function(){
+  const g=CONFIG.goal, pct=Math.min(100,CONFIG.raised/g*100);
+  $("raised").textContent=inr(CONFIG.raised);
+  $("of").textContent=`raised of ${inr(g)} · ${CONFIG.investors} investor${CONFIG.investors===1?"":"s"} so far`;
+  $("h-goal").textContent=inr(g); $("h-sub").textContent=(CONFIG.raised/g).toFixed(2)+"x";
+  $("meter-bar").setAttribute("aria-valuenow",Math.round(pct));
+  requestAnimationFrame(()=>$("meter").style.width=pct+"%");
+  const moods=[[0,"😬 Currently considering the local swimming pool."],[25,"✈️ Economy class is looking promising."],[50,"🌊 We’ve found rooms with actual sea views."],[75,"🍾 Almost there. Champagne on standby."],[100,"🇮🇹 Fully subscribed. Arrivederci!"]];
+  $("mood").textContent=moods.filter(([s])=>pct>=s).pop()[1];
+  const grp=[["Family (Quite Insistent Buyers)",.4,CONFIG.byGroup.family],["Friends (Nice Individual Investors)",.4,CONFIG.byGroup.friends],["Colleagues (Retail)",.2,CONFIG.byGroup.colleagues]];
+  $("subs").innerHTML=grp.map(([n,s,r])=>`<tr><td>${n}</td><td class="r"><b>${(r/(g*s)).toFixed(2)}x</b></td></tr>`).join("")+`<tr><td>Exes</td><td class="r" style="opacity:.6">Not eligible</td></tr>`;
+  const uses=[["Flights",32],["Sea-view suite, Amalfi",28],["Cocktails (counselling)",14],["Apology gifts",10],["2 a.m. room service",9],["Couples massage",5],["Your fridge magnet",2]];
+  $("bars").innerHTML=uses.map(([n,p])=>`<div class="bar"><span>${n}</span><b>${inr(g*p/100)}</b><div class="t"><i style="width:${p/32*100}%"></i></div></div>`).join("");
+})();
 
-// analyst
-const pitches=["You spent ₹400 on coffee this week. We’re asking for a few coffees’ worth of love.","Think of it as a wedding gift you don’t have to wrap, carry, or watch us pretend to like.","Every rupee reduces the number of honeymoon photos we’ll show you. Slightly.","Remember when we helped you move house? We remember. We have photos.","If you don’t invest, we stay home and Sachindra cooks. Nobody wants that. Ask Stuti.","Mom says she’ll be very disappointed. Not in you. In general. But also in you.","Okay, we’re begging now. The sea-view suite is almost sold out.","Fine. ₹999. Less than a large pizza with extra cheese. You’ve made worse decisions. We were there."];
-let pi=0; $("convince").onclick=()=>{ $("pitch").textContent=pitches[pi%pitches.length]; pi++; $("convince").textContent=pi<3?"Convince me more":pi<6?"Still not convinced":"Fine, I’ll invest"; };
-const acc=["Your accountant doesn’t believe in love.","Your accountant also said no to that biryani. Look how that turned out.","Interesting. Our accountant said yes. Our accountant is also the groom."];
-let ai=0; $("accountant").onclick=()=>toast(acc[ai++%acc.length]);
-
-// allotment
-function titleFor(a){ if(a>=49999)return"Chairman of the Board (Ceremonial, Non-Voting)"; if(a>=14999)return"Executive Vice President of Honeymoon Logistics"; if(a>=5999)return"Chief Romance Officer"; if(a>=2499)return"Director of Cocktail Operations"; if(a>0)return"Junior Associate of Emotional Support"; return"Honorary Moral Supporter (Unfunded)"; }
-$("allot-form").addEventListener("submit",e=>{
+/* certificate */
+function titleFor(a){ if(a>=49999)return"Chairman of the Board (Ceremonial)"; if(a>=14999)return"Executive VP of Honeymoon Logistics"; if(a>=5999)return"Chief Romance Officer"; if(a>=2499)return"Director of Cocktail Operations"; if(a>0)return"Junior Associate of Emotional Support"; return"Honorary Moral Supporter (Unfunded)"; }
+$("cert-form").addEventListener("submit",e=>{
   e.preventDefault();
-  const n=$("a-name").value.trim()||"A Mysterious Investor", a=parseInt($("a-amt").value.replace(/[^\d]/g,""))||0;
-  $("r-name").textContent=n; $("r-title").textContent=titleFor(a);
-  const sh=a?Math.max(1,Math.round(a/999)):0; $("r-shares").textContent=`${sh} imaginary share${sh===1?"":"s"} (${inr(a)})`;
-  $("result").hidden=false;
+  const n=$("c-name").value.trim()||"A Mysterious Investor", a=parseInt($("c-amt").value.replace(/[^\d]/g,""))||0;
+  const sh=a?Math.max(1,Math.round(a/999)):0;
+  $("c-who").textContent=n; $("c-title").textContent=titleFor(a);
+  $("c-fine").innerHTML=`${sh} imaginary share${sh===1?"":"s"} of HNYMN (${inr(a)}). Voting rights: none. Gratitude: unlimited.<br>Signed, ${CONFIG.groom} &amp; ${CONFIG.bride}`;
+  confetti(40); toast("Certificate issued. Screenshot it and make everyone jealous.");
 });
 
-// countdown
-function cd(){ let ms=new Date(CONFIG.departure)-new Date(); if(ms<0)ms=0; const d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60; $("closes-in").textContent=`${d}d ${h}h ${m}m left`; }
-cd(); setInterval(cd,30000);
+/* countdown */
+function cd(){
+  let ms=new Date(CONFIG.departure)-new Date(); if(ms<0)ms=0;
+  const d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60,s=Math.floor(ms/1e3)%60;
+  $("count").innerHTML=[[d,"days"],[h,"hours"],[m,"mins"],[s,"secs"]].map(([v,l])=>`<div><b>${String(v).padStart(2,"0")}</b><span>${l}</span></div>`).join("");
+  $("closes").textContent=`closes in ${d} days`;
+}
+cd(); setInterval(cd,1000);
 </script>
 </body>
 </html>
